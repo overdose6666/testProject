@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="
+overflow-y:scroll;
+overflow-x:hidden;
+width: 100%">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+<!--    <script>var mo=function(e){e.preventDefault();};-->
+<!--    function stop(){-->
+<!--        document.addEventListener("touchmove",mo,{passive:false});//禁止页面滑动-->
+<!--    }-->
+<!--    //直接默认不让滑动-->
+<!--    stop();</script>-->
+    <script>
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        }
+        if(!window.Promise) {
+            document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+        }
+    </script>
+    <title>fresh market</title>
+</head>
+<body >
+    <div id="root"></div>
+    <script src =" http://192.168.3.36:8082/target/target-script-min.js#anonymous "></script>
+</body>
+</html>
