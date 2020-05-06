@@ -1,34 +1,45 @@
 import React, {Component} from "react";
 import { Tabs, WhiteSpace } from 'antd-mobile';
 import Fooditem from "./Fooditem";
+import axios from "axios";
 
 class Ranklist extends Component{
+    state={
+        rank_foods:[]
+    };
+    componentDidMount() {
+        axios.get('http://localhost:3003/rank_foods').then(response => {
+            this.setState({
+                rank_foods:response.data
+            })
+        })
+    }
+
     renderContent = tab =>
         (<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-            <p>
-                <Fooditem />
-                <Fooditem />
-                <Fooditem />
-                <Fooditem /></p>
+                {
+                    this.state.rank_foods.map(p => {
+                        return (
+                            <div>
+                                <Fooditem fooditem={p}/>
+                            </div>
+                        )
+                    })
+                }
         </div>);
     render() {
         const tabs = [
+            { title: '果蔬' },
             { title: '海鲜' },
-            { title: '水果' },
-            { title: '蔬菜' },
             { title: '肉类' },
-            { title: '冷冻食品' },
+            { title: '禽蛋' },
             { title: '乳品' },
+            { title: '速食' },
+
         ];
         return(
             <>
-                <div className="title-wrap">
-                    <div
-                        className="home-item-title"
-                        data-resize="1">热卖榜单</div>
-                </div>
                 <div className="rank-panel">
-                        <WhiteSpace />
                         <Tabs tabs={tabs} renderTabBar={props => <Tabs.DefaultTabBar {...props} page={4}  />} >
                             {this.renderContent}
                         </Tabs>

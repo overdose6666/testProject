@@ -14,6 +14,7 @@ class Entryitem extends Component{
     }
     render() {
         const{name,image}=this.props.categories
+        // 第五个item去掉右边框
         return(
             <>
                 {this.state.narrow

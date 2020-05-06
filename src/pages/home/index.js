@@ -6,7 +6,6 @@ import { TabBar } from 'antd-mobile';
 
 
 class Home extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -66,7 +65,7 @@ class Home extends Component {
                 <div style={{position: 'fixed', height: '100%', width: '100%', top: 0}}>
                     <TabBar
                         unselectedTintColor="#949494"
-                        tintColor="#33A3F4"
+                        tintColor="#949494"
                         barTintColor="white"
                         hidden={this.state.hidden}
                         tabBarPosition='bottom'
@@ -83,10 +82,10 @@ class Home extends Component {
                                 selectedIcon={
                                     this.styleImage(v.selectedIcon)
                                 }
-                            selected={this.state.selectedTab === 'redTab'}
+                            selected={this.state.selectedTab === v.key}
                             onPress={() => {
                                 this.setState({
-                                    selectedTab: 'redTab',
+                                    selectedTab: v.key,
                                 });
                             }}
                             data-seed="logId"

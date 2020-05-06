@@ -11,7 +11,7 @@ class Autoplay extends Component{
         // simulate img loading
         setTimeout(() => {
             this.setState({
-                data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
+                data: ['1', '2', '3'],
             });
         }, 100);
     }
@@ -31,7 +31,7 @@ class Autoplay extends Component{
                             style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
                         >
                             <img
-                                src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                                src={`images/${val}.png`}
                                 alt=""
                                 style={{ width: '100%', verticalAlign: 'top' }}
                                 onLoad={() => {
