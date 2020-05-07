@@ -1,12 +1,20 @@
 import axios from "axios";
+import { actionTypes } from "./";
 
 export const initBaseData = () => {
   return (dispatch) => {
     axios
-      .get("http://localhost:3003/foodpanels")
+      .get("/api/Home.json")
       .then((res) => {
-        
+        const action = {
+          type: actionTypes.REQUEST_BASE_DATA,
+          bestSelling: res.data.data.bestSelling,
+          select: res.data.data.select,
+        };
+        dispatch(action);
       })
-      .then(console.log("fetch base data failed"));
+      .catch((err) => {
+        console.log("fetch base data failed", err);
+      });
   };
 };

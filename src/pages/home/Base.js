@@ -6,24 +6,16 @@ import TopBar from "../../common/TopBar";
 import Searchbar from "../../common/Searchbar";
 import Ranklist from "./Ranklist";
 import "../../styles/home.scss";
-import axios from "axios";
 import { connect } from "react-redux";
 import { actionCreators } from "./store/base";
 
 class Base extends Component {
-  state = {
-    foodpanels: [],
-  };
-
   componentDidMount() {
-    axios.get("http://localhost:3003/foodpanels").then((response) => {
-      this.setState({
-        foodpanels: response.data,
-      });
-    });
+    this.props.initBaseData();
   }
 
   render() {
+    console.log(this.props);
     return (
       <>
         <TopBar />
@@ -38,24 +30,32 @@ class Base extends Component {
             热卖榜单
           </div>
         </div>
-        <Ranklist />
+        {this.props.bestSelling && (
+          <Ranklist bestSelling={this.props.bestSelling.toJS()} />
+        )}
         <div className="title-wrap">
           <div className="home-item-title" data-resize="1">
             生鲜精选
           </div>
         </div>
         {/*/!*商品分类展示*!/*/}
-        {this.state.foodpanels.map((p) => {
-          return (
-            <div>
-              <FoodPanels foodpanel={p} />
-            </div>
-          );
-        })}
+        {this.props.select &&
+          this.props.select.toJS().map((p) => {
+            return (
+              <div>
+                <FoodPanels foodpanel={p} key={p.category} />
+              </div>
+            );
+          })}
       </>
     );
   }
 }
+
+const mapState = (state) => ({
+  bestSelling: state.getIn(["home", "bestSelling"]),
+  select: state.getIn(["home", "select"]),
+});
 
 const mapDispatch = (dispatch) => ({
   initBaseData: () => {
@@ -63,4 +63,4 @@ const mapDispatch = (dispatch) => ({
   },
 });
 
-export default connect(null, mapDispatch)(Base);
+export default connect(mapState, mapDispatch)(Base);
