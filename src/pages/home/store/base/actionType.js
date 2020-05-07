@@ -1,0 +1,1 @@
+export const REQUEST_BASE_DATA = "request_base_data"

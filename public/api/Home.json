@@ -1,0 +1,77 @@
+{
+  "success": "true",
+  "data": {
+    "bestSelling": [
+      {
+        "category": "果蔬",
+        "items": [
+          {
+            "id": 1,
+            "desc": "泰国进口龙眼1kg",
+            "price": 22,
+            "imgUrl": "//"
+          },
+          {
+            "id": 2,
+            "desc": "泰国进口椰青2个",
+            "price": 28,
+            "imgUrl": "//"
+          }
+        ]
+      },
+      {
+        "category": "海鲜",
+        "items": [
+          {
+            "id": 1,
+            "desc": "xxxx1kg",
+            "price": 22,
+            "imgUrl": "//"
+          },
+          {
+            "id": 2,
+            "desc": "xxxx2个",
+            "price": 28,
+            "imgUrl": "//"
+          }
+        ]
+      }
+    ],
+    "select": [
+      {
+        "category": "果蔬",
+        "items": [
+          {
+            "id": 1,
+            "desc": "泰国进口龙眼1kg",
+            "price": 22,
+            "imgUrl": "//"
+          },
+          {
+            "id": 2,
+            "desc": "泰国进口椰青2个",
+            "price": 28,
+            "imgUrl": "//"
+          }
+        ]
+      },
+      {
+        "category": "海鲜",
+        "items": [
+          {
+            "id": 1,
+            "desc": "xxxx1kg",
+            "price": 22,
+            "imgUrl": "//"
+          },
+          {
+            "id": 2,
+            "desc": "xxxx2个",
+            "price": 28,
+            "imgUrl": "//"
+          }
+        ]
+      }
+    ]
+  }
+}

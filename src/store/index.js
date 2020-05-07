@@ -1,15 +1,8 @@
-// import { createStore, compose, applyMiddleware } from "redux";
-// import createSagaMiddleware from "redux-saga";
-// import reducer from "./reducer";
-// import rootSaga from "./sagas";
-//
-// const sagaMiddleware = createSagaMiddleware();
-// const composeEnhancers =
-//     typeof window === "object" && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-//         ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
-//         : compose;
-// const enhancer = composeEnhancers(applyMiddleware(sagaMiddleware));
-// const store = createStore(reducer, enhancer);
-// sagaMiddleware.run(rootSaga);
-//
-// export default store;
+import { createStore, compose, applyMiddleware } from "redux";
+import thunk from "redux-thunk";
+import reducer from "./reducer";
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
+
+export default store;
