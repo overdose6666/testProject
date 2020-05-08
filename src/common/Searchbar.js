@@ -3,7 +3,6 @@ import { SearchBar, Button, WhiteSpace, WingBlank } from 'antd-mobile';
 import Ranklist from "../pages/home/Ranklist";
 
 class Searchbar extends Component {
-
     // componentDidMount() {
     //     this.autoFocusInst.focus();
     // }

@@ -1,0 +1,67 @@
+.list-con {
+  box-sizing: border-box;
+  //position: absolute;
+  padding: .4rem;
+  left: 3.44rem;
+  width: 14.52rem;
+  height: calc(100vh - 5.76rem);
+  overflow-y: auto;
+  z-index: 50;
+}
+.list-con .con-box.cur {
+  display: block;
+}
+.list-con .con-box {
+  width: 13.8rem;
+  display:  block;
+}
+.list-con .con-box .food-con {
+  width: 13.8rem;
+  overflow: hidden;
+}
+.list-con .con-box .title {
+  width: 100%;
+  text-align: center;
+  margin: .6rem auto .8rem auto;
+}
+.list-con .con-box .module-title {
+  color: #222;
+  font-size: .9rem;
+  line-height: .6rem;
+  margin: .6rem auto .8rem auto;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+}
+.food-con-item{
+  float: left;
+  width: 4.6rem;
+  margin: 0 0 .3rem 0;
+}
+.food-con-item img {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0 .6rem;
+  margin-left: .5rem;
+  position: relative;
+}
+.food-con-item em {
+  display: block;
+  white-space: nowrap;
+  font-size: .68rem;
+  color: #999;
+  height: 1.08rem;
+  line-height: 1.08rem;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'PingFangSC-Regular';
+  font-style: normal;
+  font-weight: 500;
+}
+.am-tabs-vertical .am-tabs-tab-bar-wrap{
+  height:300px;
+}
+.am-tabs-vertical .am-tabs-content-wrap {
+  height:350px;
+}

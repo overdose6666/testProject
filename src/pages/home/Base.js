@@ -8,6 +8,7 @@ import Ranklist from "./Ranklist";
 import "../../styles/home.scss";
 import { connect } from "react-redux";
 import { actionCreators } from "./store/base";
+import "../../styles/home.scss";
 
 class Base extends Component {
   componentDidMount() {

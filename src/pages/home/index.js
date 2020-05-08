@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "antd-mobile/dist/antd-mobile.css";
-import "../../styles/home.scss";
 import Base from "./Base";
+import Cate from "../cate";
 import { TabBar } from "antd-mobile";
 import { connect } from "react-redux";
 
@@ -95,7 +95,7 @@ class Home extends Component {
                   }}
                   data-seed="logId"
                 >
-                  <Base />
+                  <Cate />
                 </TabBar.Item>
               );
             })}

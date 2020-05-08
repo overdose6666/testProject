@@ -134,23 +134,31 @@
 }
 .food-content .price .sale-price{
   font-size: .8rem;
-  color: #32CD32;
+  color: #FF8C00;
 }
 .food-content .name{
   color: #222;
   padding: 0 .6rem;
   font-size: .8rem;
+  height: 1.9rem;
 }
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
 }
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 .food-content .cart.gray {
   position: absolute;
   right: .8rem;
-  bottom: .65rem;
+  bottom: .5rem;
   width: 1.06rem;
   height: 1.06rem;
   background: url(../images/food_cart.png) no-repeat;
@@ -159,26 +167,12 @@
 .food-content .cart.active {
   position: absolute;
   right: .8rem;
-  bottom: .65rem;
+  bottom: .5rem;
   width: 1.06rem;
   height: 1.06rem;
   background: url(../images/food_cartactive.png) no-repeat;
   background-size: 100% 100%;
 }
-.am-search.my-search {
-  background-color: #ffffff;
-}
-.my-search.am-search .am-search-input{
-  background-color: #efeff4;
-  border-radius: 20px;
-}
-.am-navbar-light {
-  color: #32CD32;
-}
-.am-search-cancel {
-  color: #32CD32;
-}
-.am-tabs-default-bar-tab-active {
-  color: #32CD32;
-}
+
+
 
