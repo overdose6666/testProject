@@ -9,41 +9,6 @@ import { connect } from "react-redux";
 import { actionCreators } from "./store";
 
 class Cate extends Component {
-  foodList = [
-    {
-      id: 1,
-      category: "热门推荐",
-      foodlist: [
-        {
-          id: 1,
-          name: "车厘子",
-          imgUrl: "images/cate_food1.png",
-        },
-        {
-          id: 2,
-          name: "鸡翅",
-          imgUrl: "images/cate_food2.png",
-        },
-      ],
-    },
-    {
-      id: 2,
-      category: "美味水果",
-      foodlist: [
-        {
-          id: 1,
-          name: "车厘子",
-          imgUrl: "images/cate_food1.png",
-        },
-        {
-          id: 2,
-          name: "鸡翅",
-          imgUrl: "images/cate_food2.png",
-        },
-      ],
-    },
-  ];
-
   componentDidMount = () => {
     this.props.initCateData();
   };
