@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "antd-mobile/dist/antd-mobile.css";
 // import Base from "./Base";
 import Cate from "../cate";
+import FoodDetail from "../foodsdetail"
 import { TabBar } from "antd-mobile";
 import { connect } from "react-redux";
 
@@ -95,7 +96,7 @@ class Home extends Component {
                   }}
                   data-seed="logId"
                 >
-                  <Cate />
+                  <FoodDetail />
                 </TabBar.Item>
               );
             })}

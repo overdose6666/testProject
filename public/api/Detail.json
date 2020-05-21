@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "data": {
+    "title": "越南进口白心火龙果 2个装 单果约300-350g",
+    "carousel": [
+      "//img12.360buyimg.com/n1/jfs/t3139/55/563803374/155272/6e42eeb9/57babc0aN306542c1.jpg",
+      "//img12.360buyimg.com/n1/jfs/t3139/55/563803374/155272/6e42eeb9/57babc0aN306542c1.jpg"
+    ],
+    "price": 69.9,
+    "originPrice": 128,
+    "deliveryPrice": 10,
+    "sold": 0,
+    "stock": 587,
+    "choices": ["白心 2个", "白心 3个"],
+    "deliveryTime": 1,
+    "descImg": "//img30.360buyimg.com/sku/jfs/t1/46430/4/7643/160652/5d53bbe4E4668d819/b18b66bae58de13e.jpg",
+    "comments": [
+      {
+        "id": 1,
+        "author": "yyf",
+        "positive": true,
+        "avatar": "https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg",
+        "content": "外观方面:送过来的时候超级新鲜，特别棒的样子，还是挺好的，超级不错的样子。新鲜方面:还是蛮新鲜的，送过来就立马放到冰箱里面了，感觉还能吃挺长一段时间。口感方面:挺好的，这个还是挺新鲜的，不错，挺好的样子。",
+        "timeStamp": 1590013673
+      },
+      {
+        "id": 2,
+        "author": "yyf",
+        "positive": true,
+        "avatar": "https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg",
+        "content": "外观方面:送过来的时候超级新鲜，特别棒的样子，还是挺好的，超级不错的样子。新鲜方面:还是蛮新鲜的，送过来就立马放到冰箱里面了，感觉还能吃挺长一段时间。口感方面:挺好的，这个还是挺新鲜的，不错，挺好的样子。",
+        "timeStamp": 1590013673
+      },
+      {
+        "id": 3,
+        "author": "soul",
+        "positive": false,
+        "avatar": "https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg",
+        "content": "外观方面:送过来的时候超级新鲜，特别棒的样子，还是挺好的，超级不错的样子。新鲜方面:还是蛮新鲜的，送过来就立马放到冰箱里面了，感觉还能吃挺长一段时间。口感方面:挺好的，这个还是挺新鲜的，不错，挺好的样子。",
+        "timeStamp": 1590013673
+      },
+      {
+        "id": 4,
+        "author": "soul",
+        "positive": false,
+        "avatar": "https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg",
+        "content": "外观方面:送过来的时候超级新鲜，特别棒的样子，还是挺好的，超级不错的样子。新鲜方面:还是蛮新鲜的，送过来就立马放到冰箱里面了，感觉还能吃挺长一段时间。口感方面:挺好的，这个还是挺新鲜的，不错，挺好的样子。",
+        "timeStamp": 1590013673
+      },
+      {
+        "id": 5,
+        "author": "soul",
+        "positive": false,
+        "avatar": "https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg",
+        "content": "外观方面:送过来的时候超级新鲜，特别棒的样子，还是挺好的，超级不错的样子。新鲜方面:还是蛮新鲜的，送过来就立马放到冰箱里面了，感觉还能吃挺长一段时间。口感方面:挺好的，这个还是挺新鲜的，不错，挺好的样子。",
+        "timeStamp": 1590013673
+      }
+    ]
+  }
+}

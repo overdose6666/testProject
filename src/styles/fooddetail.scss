@@ -1,0 +1,96 @@
+.detail-img {
+  img {
+    height: 25.5rem;
+    width: 100%;
+  }
+}
+.detail-title {
+  display: flex;
+  margin: 0.5rem 0.625rem 0 0.625rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  // font: "Microsoft YaHei";
+  color: #333;
+}
+.detail-price {
+  i {
+    font-style: normal;
+    color: #ff4040;
+    font-size: 1.2rem;
+  }
+  white-space: pre;
+  margin: 1rem 0.625rem 0 0.625rem;
+  font-size: 1.8rem;
+  color: #ff4040;
+  font-weight: bold;
+  display: flex;
+  .detail-origin {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    text-decoration: line-through;
+    color: #999;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+}
+.detail-info {
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  white-space: pre;
+  color: #999;
+  font-size: 0.9rem;
+}
+.detail-choose {
+  background-color: #f5f5f9;
+  display: flex;
+}
+.am-list-content {
+  font-size: 0.9rem !important;
+  color: #999 !important;
+}
+.am-list-extra {
+  font-size: 0.9rem !important;
+  color: #333 !important;
+}
+.am-picker-popup-item {
+  color: #32cd32;
+}
+.detail-delivery {
+  background-color: #f5f5f9;
+  font-size: 0.9rem !important;
+  .delivery-box {
+    display: flex;
+    justify-content: space-between;
+    .delivery-title {
+      font-weight: bold;
+    }
+  }
+}
+.detail-bottom {
+  margin-top: 2rem;
+  .detail-detail {
+    display: "flex";
+    align-items: "center";
+    justify-content: "center";
+    background-color: "#fff";
+    img {
+      width: 100%;
+    }
+  }
+  .thumb-img {
+    width: 2.2rem !important;
+    height: 2.2rem !important;
+  }
+  .comment-text {
+    font-size: 0.9rem !important;
+    &.positive {
+      color: #ff4040 !important;
+    }
+    &.nagetive {
+      color: #006030 !important;
+    }
+  }
+}
