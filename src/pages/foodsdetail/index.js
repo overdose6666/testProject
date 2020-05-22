@@ -8,12 +8,6 @@ import { connect } from "react-redux";
 import { actionCreators } from "./store";
 
 class FoodDetail extends Component {
-  constructor(props) {
-    super(props);
-    this.tabs = [{ title: "图文详情" }, { title: "评论区" }];
-    this.subTabs = [{ title: "全部" }, { title: "好评" }, { title: "差评" }];
-  }
-
   // TODO: 加入id
   componentDidMount = () => {
     this.props.initDetailData();
@@ -26,6 +20,23 @@ class FoodDetail extends Component {
 
   render() {
     const detailData = this.props.detailData.toJS();
+    const tabs = [{ title: "图文详情" }, { title: "评论区" }];
+    let subTabs;
+    if (detailData.comments) {
+      subTabs = [
+        { title: `全部(${detailData.comments.length})` },
+        {
+          title: `好评(${
+            detailData.comments.filter((comment) => comment.positive).length
+          })`,
+        },
+        {
+          title: `差评(${
+            detailData.comments.filter((comment) => !comment.positive).length
+          })`,
+        },
+      ];
+    }
     return (
       <>
         <TopBar />
@@ -49,11 +60,11 @@ class FoodDetail extends Component {
             <span>{detailData.price}</span>
           </div>
           <div className="detail-origin">
-            <span>{detailData.originPrice}</span>
+            <span>￥ {detailData.originPrice}</span>
           </div>
         </div>
         <div className="detail-info">
-          <div>配送费 ￥ {detailData.deliveryPrice}</div>
+          <div>配送费 ￥{detailData.deliveryPrice}</div>
           <div>已售 {detailData.sold}</div>
           <div>库存 {detailData.stock}</div>
         </div>
@@ -81,14 +92,23 @@ class FoodDetail extends Component {
         <List>
           <List.Item className="detail-delivery">
             <div className="delivery-box">
-              <span className="delivery-title">有货</span>
-              <span className="forecast">预计 1天后 送达</span>
+              {detailData.stock > 0 && (
+                <>
+                  <span className="delivery-title">有货</span>
+                  <span className="forecast">预计 1天后 送达</span>
+                </>
+              )}
+              {detailData.stock === 0 && (
+                <>
+                  <span className="delivery-title">暂时无货</span>
+                </>
+              )}
             </div>
           </List.Item>
         </List>
         <div className="detail-bottom">
           <Tabs
-            tabs={this.tabs}
+            tabs={tabs}
             initialPage={0}
             tabBarUnderlineStyle={{ borderColor: "#32cd32" }}
           >
@@ -97,7 +117,7 @@ class FoodDetail extends Component {
             </div>
             <div className="detail-detail">
               <Tabs
-                tabs={this.subTabs}
+                tabs={subTabs}
                 initialPage={0}
                 tabBarBackgroundColor={"#f5f5f9"}
                 tabBarActiveTextColor={"#006030"}
