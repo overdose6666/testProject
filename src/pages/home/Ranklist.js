@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import { Tabs, WhiteSpace } from "antd-mobile";
 import Fooditem from "./Fooditem";
 
+
+
 class Ranklist extends Component {
+
   renderContent = (tab) => {
     return (
       <div
@@ -42,10 +45,12 @@ class Ranklist extends Component {
         <div className="rank-panel">
           <Tabs
             tabs={tabs}
+            tabBarUnderlineStyle={{ borderColor: "#32cd32" }}
             renderTabBar={(props) => <Tabs.DefaultTabBar {...props} page={4} />}
           >
             {this.renderContent}
           </Tabs>
+
           <WhiteSpace />
         </div>
       </>

@@ -7,6 +7,7 @@ import "../../styles/cate.scss";
 import CateItem from "./CateItem";
 import { connect } from "react-redux";
 import { actionCreators } from "./store";
+import NavFooter from "../../common/NavFooter";
 
 class Cate extends Component {
   componentDidMount = () => {
@@ -66,6 +67,7 @@ class Cate extends Component {
             initialPage={"t1"}
             tabBarPosition="left"
             tabDirection="vertical"
+            tabBarUnderlineStyle={{ borderColor: "#32cd32" }}
             // renderTabBar:右侧内容区渲染函数
             renderTabBar={(props) => <Tabs.DefaultTabBar {...props} page={7} />}
           >
@@ -73,6 +75,7 @@ class Cate extends Component {
           </Tabs>
           <WhiteSpace />
         </div>
+          <NavFooter history={this.props.history} ></NavFooter>
       </>
     );
   }

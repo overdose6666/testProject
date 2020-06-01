@@ -1,6 +1,7 @@
 import axios from "axios";
 import { actionTypes } from "./";
 
+//then:请求url的返回结果 dispatch(action)：将action传给reducer.js
 export const initDetailData = () => {
   return (dispatch) => {
     axios
