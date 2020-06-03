@@ -54,7 +54,13 @@ class Cartitem extends Component {
                   -
                 </Button>
                 <div className="cart-item-input">
-                  <input type="text" value={quant} />
+                  <input
+                    type="text"
+                    value={quant}
+                    onChange={(e) =>
+                      this.props.handleChange(id, e.target.value)
+                    }
+                  />
                 </div>
                 <Button
                   type="ghost"

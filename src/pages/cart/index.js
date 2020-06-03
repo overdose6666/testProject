@@ -16,7 +16,7 @@ class Cart extends Component {
       if (item.id !== id) {
         return item;
       } else {
-        if (item.quant + value !== 0) {
+        if (item.quant + value !== 0 && item.quant !== "") {
           return { ...item, quant: item.quant + value };
         }
       }
@@ -38,6 +38,25 @@ class Cart extends Component {
       return { ...item, checked: !checked };
     });
     this.props.changeQuant(newList);
+  };
+
+  handleChange = (id, value) => {
+    let reg = /^[1-9]+[0-9]*]*$/;
+    if (reg.test(value) || value === "") {
+      let newList = this.props.cartList.toJS().map((item) => {
+        if (item.id !== id) {
+          return item;
+        } else {
+          if (value !== "") {
+            return { ...item, quant: Number(value) };
+          } else {
+            return { ...item, quant: value };
+          }
+        }
+      });
+      newList = newList.filter((item) => item !== undefined);
+      this.props.changeQuant(newList);
+    }
   };
 
   render() {
@@ -71,6 +90,7 @@ class Cart extends Component {
                     item={item}
                     handlePlus={this.handlePlus}
                     handleCheck={this.handleCheck}
+                    handleChange={this.handleChange}
                   />
                 );
               })}
@@ -102,7 +122,7 @@ class Cart extends Component {
                 {this.props.cartList &&
                   Math.round(
                     this.props.cartList.toJS().reduce((prev, cur) => {
-                      if (cur.checked) {
+                      if (cur.checked && cur.quant !== "") {
                         return prev + cur.price * cur.quant;
                       } else {
                         return prev + 0;
