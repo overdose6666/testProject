@@ -1,18 +1,24 @@
+.total{
+  height:100%;
+  width:100%;
+  background-color: #f5f5f5;
+}
 .login-content {
-  padding: 0 3rem;
+  padding: 0 2.5rem;
   margin-top: 4rem;
+
 }
 .tel_inputBox, .password_inputBox, .form-content {
-  width: 18rem;
-  height: 3rem;
-  line-height: 1.8rem;
-  margin-top: 2rem;
+  width: 19.5rem;
+  height: 2.8rem;
+  line-height: 2rem;
+  margin-top: 2.5rem;
   border-bottom: 1px solid #bbb;
   position: relative;
 }
 .login-content .tel_inputBox .txt-input {
-  width: 18rem;
-  caret-color: #fb0;
+  width: 19.5rem;
+  caret-color: #32cd32;
 }
 .password_inputBox, .form-content {
   margin-top: .48rem;
@@ -24,11 +30,12 @@
   position: absolute;
   right: 0;
   top: 0;
+  color: #222222;
 }
 .login-content .tel_inputBox input, .login-content .password_inputBox input, .verifyCode {
   margin-left: .48rem;
-  font-size: 1.54rem;
-  caret-color: #fb0;
+  font-size: 1.1rem;
+  caret-color: #32cd32;
 }
 .login-content .password_inputBox input, .form-content .verifyCode {
   width: 12rem;
@@ -38,12 +45,12 @@
   text-align: center;
 }
 .btnBox .login_btn {
-  width: 18rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
+  width: 19.5rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
   display: block;
   color: #222;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: .36rem;
   background: #32cd32;
   font-weight: 700;
@@ -51,5 +58,6 @@
 .btnBox .register_switch_btn_box {
   display: inline-block;
   margin-top: 1.34rem;
-  font-size: .8rem;
+  font-size: .9rem;
+  color: #222222;
 }

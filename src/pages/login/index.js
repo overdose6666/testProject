@@ -6,9 +6,10 @@ class Login extends Component {
     render(){
         return(
             <>
+                <div className="total">
                 {/*账密登录*/}
                 <div className="login-content">
-                    <h2>欢迎登录生鲜超市</h2>
+                    <h1>欢迎登录生鲜超市</h1>
                     <div className="tel_inputBox">
                         <input type="text" placeholder="请输入用户名" className="txt-input changeInput" id="username"
                                name="username" maxLength="64">
@@ -59,6 +60,7 @@ class Login extends Component {
                         <a href="#" className="login_btn">登录</a>
                         <a href="#" className="register_switch_btn_box">没有账号？去注册</a>
                     </div>
+                </div>
                 </div>
              </>
         );
