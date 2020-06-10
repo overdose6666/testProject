@@ -20,7 +20,7 @@ class Cate extends Component {
         display: "flex",
         alignItems: "left",
         justifyContent: "space-around",
-        height: "400px",
+        height: "500px",
         backgroundColor: "#fff",
       }}
     >

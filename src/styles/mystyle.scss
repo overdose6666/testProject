@@ -1,4 +1,4 @@
-//修改antd-mobile样式
+//修改antd-mobile样式 全局样式写在此处
 .am-search.my-search {
   background-color: #ffffff;
 }
@@ -14,4 +14,30 @@
 }
 .am-tabs-default-bar-tab-active {
   color: #32CD32;
+}
+.am-tab-bar-bar .am-tab-bar-tab-title {
+  font-size: .8rem;
+}
+input {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: #A0A0A0;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: -internal-light-dark-color(white, black);
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 0px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
 }

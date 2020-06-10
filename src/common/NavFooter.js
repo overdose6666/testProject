@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "antd-mobile/dist/antd-mobile.css";
 import { TabBar } from "antd-mobile";
 
-
 class NavFooter extends Component {
     constructor(props) {
         super(props);
@@ -43,8 +42,8 @@ class NavFooter extends Component {
         return (
             <div
                 style={{
-                    width: "22px",
-                    height: "22px",
+                    width: "2.5rem",
+                    height: "1.5rem",
                     background: "url(" + url + ") center center /  21px 21px no-repeat",
                 }}
             />
@@ -73,8 +72,8 @@ class NavFooter extends Component {
                 >
                     <TabBar
                         noRenderContent="true"
-                        unselectedTintColor="#949494"
-                        tintColor="#949494"
+                        unselectedTintColor="#222222"
+                        tintColor="#222222"
                         barTintColor="white"
                         hidden={this.state.hidden}
                         tabBarPosition="bottom"

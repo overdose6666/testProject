@@ -4,7 +4,7 @@ import Index from './pages/home/index'
 import Cate from './pages/cate/index'
 import My from './pages/my/index'
 import Cart from './pages/cart/index'
-// import Login from "./components/Login";
+import Login from "./pages/login";
 // import NotFound from "./components/NotFound";
 
 //设置不同组件的路由
@@ -18,7 +18,7 @@ class Router extends Component {
             <Route path="/cate" component={Cate} />
             <Route path="/my" component={My} />
             <Route path="/cart" component={Cart} />
-            {/*<Route path="/login" exact component={Login} />*/}
+            <Route path="/login" exact component={Login} />
             {/*<Route component={Index} />*/}
         </Switch>
             </BrowserRouter>

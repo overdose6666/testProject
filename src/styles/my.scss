@@ -1,17 +1,17 @@
 .banner {
   width: 100%;
-  height: 7.24rem;
+  height: 8.74rem;
   background: #32CD32;
   position: relative;
 }
 .banner .nav-box {
   height: 1.28rem;
-  padding-top: .66rem;
+  padding-top: 1.26rem;
   text-align: center;
   position: relative;
 }
 .banner .nav-box .nav-title {
-  font-size: 1.02rem;
+  font-size: 1.32rem;
   font-weight: bold;
   color: #000;
 }
@@ -19,7 +19,7 @@
   height: 1.28rem;
   position: absolute;
   right: 0.6rem;
-  top: 0.66rem;
+  top: 1.26rem;
 }
 .tr {
   text-align: right;
@@ -29,7 +29,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.06rem .84rem 0;
+  padding: 1.56rem .84rem 0;
   position: relative;
 }
 .banner .user-info .user-logo {
@@ -53,9 +53,9 @@
 }
 .banner .user-info .user-detail .user-name span {
   display: block;
-  font-size: 0.76rem;
+  font-size: 0.96rem;
   margin-left: 0.6rem;
-  max-width: 4rem;
+  max-width: 5.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -69,10 +69,11 @@
   background: #fff;
   margin-left: .48rem;
   padding: .48rem;
+  height:7rem;
 }
 .box-title {
   width: 100%;
-  height: .68rem;
+  height: 1.78rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +84,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   font-family: PingFangSC-Semibold;
-  font-size: .6rem;
+  font-size: .85rem;
   color: #222;
   letter-spacing: 0;
   font-weight: 700;
@@ -96,14 +97,14 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-size: 0.48rem;
+  font-size: 0.68rem;
   color: #666;
 }
 .order .order-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 3.52rem;
+  height: 4.52rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -121,14 +122,14 @@
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 0.48rem;
+  font-size: 0.75rem;
   color: #666;
   margin-top: 0.5rem;
 }
 .icon {
   width: 1.5em; height: 1.5em;
   vertical-align: -0.15em;
-  margin-top: 0.8rem;
+  margin: 0.8rem 0.8rem 0.3rem 0.8rem;
   fill: currentColor;
   overflow: hidden;
 }

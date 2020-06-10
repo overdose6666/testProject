@@ -37,7 +37,7 @@ class My extends Component {
                 {/*跳转到订单页面*/}
                 <a className="fk-sa-click" id="all"
                    href="#"
-                   name="allorder">查看全部&nbsp;<svg className="icon" aria-hidden="true"style={{marginTop:0}}
+                   name="allorder">查看全部&nbsp;<svg className="icon" aria-hidden="true"style={{margin:0}}
                 >
                     <use xlinkHref="#icon-to-all"></use>
                 </svg></a>

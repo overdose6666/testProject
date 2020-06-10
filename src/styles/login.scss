@@ -1,0 +1,55 @@
+.login-content {
+  padding: 0 3rem;
+  margin-top: 4rem;
+}
+.tel_inputBox, .password_inputBox, .form-content {
+  width: 18rem;
+  height: 3rem;
+  line-height: 1.8rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid #bbb;
+  position: relative;
+}
+.login-content .tel_inputBox .txt-input {
+  width: 18rem;
+  caret-color: #fb0;
+}
+.password_inputBox, .form-content {
+  margin-top: .48rem;
+  overflow: hidden;
+  clear: both;
+}
+.forgetPass {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.login-content .tel_inputBox input, .login-content .password_inputBox input, .verifyCode {
+  margin-left: .48rem;
+  font-size: 1.54rem;
+  caret-color: #fb0;
+}
+.login-content .password_inputBox input, .form-content .verifyCode {
+  width: 12rem;
+}
+.btnBox {
+  margin-top: 2rem;
+  text-align: center;
+}
+.btnBox .login_btn {
+  width: 18rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  display: block;
+  color: #222;
+  font-size: 1rem;
+  border-radius: .36rem;
+  background: #32cd32;
+  font-weight: 700;
+}
+.btnBox .register_switch_btn_box {
+  display: inline-block;
+  margin-top: 1.34rem;
+  font-size: .8rem;
+}
