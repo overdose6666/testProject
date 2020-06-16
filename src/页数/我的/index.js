@@ -30,7 +30,7 @@ class My extends Component {
                         </div>
                     </div>
                 </div>
-                {/*以下按钮若未登录，全部跳转到登录界面*/}
+       
         <div className="order" >
             <div className="box-title">
                 <span>我的订单</span>
